@@ -1,0 +1,34 @@
+body {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 400px;
+  }
+  
+  .square {
+    background-color: rgb(53, 51, 51);
+    height: 16px;
+    width: 16px;
+    margin: 2px;
+    transition: 0.5s ease-in;
+  }
+
+  .square:hover {
+    transition-duration: 0s;
+  }
+
+  #box {
+    width: 200px;
+    height: 200px;
+    background-color: azure;
+  }
