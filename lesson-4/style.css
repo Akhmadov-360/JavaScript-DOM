@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    padding: 2rem;
+    height: 100vh;
+    background: linear-gradient(to bottom, #ff5e88, #ff9966);
+}
+
+header {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+}
+
+h3 {
+    font-weight: 600;
+    color: #000;
+}
+
+.calendar {
+    margin: auto;
+    width: 380px;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.calendar header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.calendar ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.calendar ul li {
+    width: calc(100% / 7);
+    margin-top: 25px;
+    position: relative;
+    z-index: 2;
+}
+
+#prev, #next {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+#next::before, #prev::before {
+    content: '';
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-style: solid;
+    border-width: 0.25em 0.25em 0 0;
+    border-color: #ccc;
+}
+
+#next::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+#prev::before {
+    transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+#prev:hover::before,
+#next:hover::before {
+    border-color: #000;
+}
+
+.days {
+    font-weight: 600;
+}
+
+.dates li.today {
+    color: #fff;
+}
+
+.dates li.today::before {
+    content: '';
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #000;
+    border-radius: 50%;
+    
+}
+
+.dates li.inactive {
+    color: #ccc;
+}
