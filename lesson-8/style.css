@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", system-ui;
+}
+
+body {
+    background: linear-gradient(to right, #8360c3, #2ebf91);
+}
+
+.user-form {
+    width: full;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#search {
+    outline: none;
+    border: none;
+    width: 230px;
+    height: 40px;
+    border-radius: 6px;
+    padding: 2px 4px;
+    background-color: #fff;
+    color: #000;
+    font-weight: 500;
+    line-height: 14px;
+    font-size: 16px; 
+}
+
+#search:focus {
+    border: 2px solid black;
+}
+
+.user-form {
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  .user {
+    flex-grow: 1;
+  }
+  
+  .user h2 {
+    font-size: 24px;
+    margin: 0 0 10px;
+  }
+  
+  .user p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  .user ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .user ul li {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  
+
+.error-card {
+    background-color: #ffe6e6;
+    border: 2px solid #ff4d4d;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(255, 77, 77, 0.5);
+    padding: 20px;
+    text-align: center;
+    animation: shake 0.5s ease;
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  
+  .error-card h1 {
+    font-size: 30px;
+    color: #ff1a1a;
+    margin: 10px 0;
+  }
+  
+  .error-card p {
+    font-size: 18px;
+    color: #ff6666;
+  }
+  
+  .error-icon {
+    font-size: 80px;
+    color: #ff4d4d;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  @keyframes shake {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-5px);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+    75% {
+      transform: translateX(-5px);
+    }
+  }
+
+  .repos {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .repos a.repo {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #0366d6;
+    transition: background-color 0.3s;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .repos a.repo:hover {
+    background-color: #e0e0e0;
+  }
